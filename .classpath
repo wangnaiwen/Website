@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.hibernate.MYECLIPSE_HIBERNATE3_3_EM"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.hibernate.MYECLIPSE_HIBERNATE3_3_CORE"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mysql-connector-java-5.1.38-bin.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/smartupload.jar"/>
+	<classpathentry kind="lib" path="F:/poi.jar/poi.jar/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="F:/poi.jar/poi.jar/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="F:/poi.jar/poi.jar/jxl.jar"/>
+	<classpathentry kind="lib" path="F:/poi.jar/poi.jar/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="F:/poi.jar/poi.jar/poi-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="F:/poi.jar/poi.jar/poi-examples-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="F:/poi.jar/poi.jar/poi-excelant-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="F:/poi.jar/poi.jar/poi-ooxml-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="F:/poi.jar/poi.jar/poi-ooxml-schemas-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="F:/poi.jar/poi.jar/poi-scratchpad-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="F:/poi.jar/poi.jar/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="F:/poi.jar/poi.jar/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>
