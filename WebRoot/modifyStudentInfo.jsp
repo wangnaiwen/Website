@@ -95,9 +95,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     								s = 2;
     							}else{
     								if(sex.equals("woman")){
-    									s = 1;
-    								}else{
     									s = 0;
+    								}else{
+    									s = 1;
     								}
     							}
    							 %><br>
@@ -145,7 +145,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    								}
    								else if(s == 2){
    									%>
-   										性 别：<input type="radio" name="sex" value="1">男
+   										性 别：<input type="radio" name="sex" value="1" checked="checked">男
    										 <input type="radio" name="sex" value="0">女<br><br>
    									<%
    								}
@@ -171,9 +171,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <br><br><br><br><br><br><br><br><br><br><br>
 <hr noshade="noshade" color="#FFFFFF" width="100%" size="1">
- <div class="footer" align="center"">
-     <p>Copyright &copy; 2016 Simple User Login Form. All Rights Reserved | Design by <a href="http://desktop-kg8cd68:8081/1300310118/index.jsp" id="jctd">wangnaiwen</a></p>
-</div>
+<%@ include file="footer.jsp" %>
   </body>
 </html>
 <script> 

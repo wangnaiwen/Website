@@ -116,3 +116,47 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    }
   }
 </script>
+<script> 
+//取出传回来的参数error并与yes比较
+  var errori ='<%=request.getParameter("success")%>';
+ 
+  if(errori=='yes'){
+      if(confirm("登录成功！"))
+   {//如果是true ，那么就把页面转向thcjp.cnblogs.com
+       location.href="firstAdmin.jsp";
+   }
+   else  
+   {//否则说明下了，赫赫
+       //alert("你按了取消，那就是返回false");
+   }
+  }
+</script>
+<script> 
+//取出传回来的参数error并与yes比较
+  var errori ='<%=request.getParameter("success2")%>';
+  
+  if(errori=='yes'){
+      if(confirm("登录成功！"))
+   {//如果是true ，那么就把页面转向thcjp.cnblogs.com
+       location.href="studentCourse.jsp";
+   }
+   else  
+   {//否则说明下了，赫赫
+       //alert("你按了取消，那就是返回false");
+   }
+  }
+</script>
+<script> 
+//取出传回来的参数error并与yes比较
+  var errori ='<%=request.getParameter("success3")%>';
+  if(errori=='yes'){
+      if(confirm("登录成功！"))
+   {//如果是true ，那么就把页面转向thcjp.cnblogs.com
+       location.href="teacherCourse.jsp";
+   }
+   else  
+   {//否则说明下了，赫赫
+       //alert("你按了取消，那就是返回false");
+   }
+  }
+</script>

@@ -22,6 +22,15 @@
 		<mapping resource="entity/Admin.hbm.xml" />
 		<mapping resource="entity/Student.hbm.xml" />
 		<mapping resource="entity/Teacher.hbm.xml" />
+		<mapping resource="entity/Course.hbm.xml" />
+		<mapping resource="entity/Sc.hbm.xml" />
+		<mapping resource="entity/Coursescore.hbm.xml" />
+		<mapping resource="entity/File.hbm.xml" />
+		<mapping resource="entity/Publishjob.hbm.xml" />
+		<mapping resource="entity/Submitjob.hbm.xml" />
+		<mapping resource="entity/Question.hbm.xml" />
+		<mapping resource="entity/Answer.hbm.xml" />
+
 
 	</session-factory>
 

@@ -94,6 +94,7 @@ public class ModifyTeacherInfo extends HttpServlet {
 				tea.setWechat(wechat);
 				tea.setType(Integer.parseInt(userType));
 				tc.doModify(tea);
+				
 				request.getRequestDispatcher("/fourAdmin.jsp").forward(request, response);
 			}
 		}

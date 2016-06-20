@@ -38,46 +38,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-<div id=header align="center">
-	管理员系统
-</div>
-<div align="center">
-	<div class="row-fluid">
-		<div class="span12">
-			<div class="navbar">
-				<div class="navbar-inner">
-					<div class="container-fluid">
-						<div class="nav-collapse collapse navbar-responsive-collapse" align="center">
-							<ul class="nav" >
-								<li>
-									<a href="http://desktop-kg8cd68:8081/1300310118/firstAdmin.jsp">学生注册审核</a>
-								</li>
-								<li>
-									<a href="http://desktop-kg8cd68:8081/1300310118/secondAdmin.jsp">老师注册审核</a>
-								</li>
-								<li class="active">
-									<a href="http://desktop-kg8cd68:8081/1300310118/thirdAdmin.jsp">管理学生账号</a>
-								</li>
-								<li>
-									<a href="http://desktop-kg8cd68:8081/1300310118/fourAdmin.jsp">管理教师账号</a>
-								</li>
-								<li>
-									<a href="http://desktop-kg8cd68:8081/1300310118/fiveAdmin.jsp">团队账号注册</a>
-								</li>
-								<li>
-									<a href="http://desktop-kg8cd68:8081/1300310118/sixAdmin.jsp">个人账号注册</a>
-								</li>
-								<li>
-									<a href="http://desktop-kg8cd68:8081/1300310118/index.jsp">退出登录</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<%@ include file="adminHeader.jsp" %>
 
 <div>
 	<div align="center" class="row-fluid">
@@ -187,7 +148,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </html>
 <script> 
 //取出传回来的参数error并与yes比较
-  var errori ='<%=request.getParameter("error1")%>';
+  var errori ='<%= request.getParameter("error1")%>';
   if(errori=='yes'){
       if(confirm("至少要选中一名学生"))
    {//如果是true ，那么就把页面转向thcjp.cnblogs.com

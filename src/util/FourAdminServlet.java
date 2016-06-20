@@ -55,13 +55,13 @@ public class FourAdminServlet extends HttpServlet {
 		if(delete != null){
 			if(values == null ){
 				//跳出：至少选中一项
-				response.sendRedirect("http://localhost:8081/1300310118/fourAdmin.jsp?error1=yes");
+				out.println("<script>alert('至少选中一项'); history.back();</script>");
 			}else{
 				//在这里进行删除
 				for(int i = 0; i < values.length; i++){
 					tc.doDelete(values[i]);
 				}
-				request.getRequestDispatcher("/fourAdmin.jsp").forward(request, response);
+				out.println("<script>alert('提交成功'); history.back();</script>");
 			}
 		}
 		if(deleteAll != null){
@@ -70,7 +70,7 @@ public class FourAdminServlet extends HttpServlet {
 			for(int i = 0; i < list.size(); i++){
 				tc.doDelete(list.get(i).getTid());
 			}
-			request.getRequestDispatcher("/fourAdmin.jsp").forward(request, response);
+			out.println("<script>alert('提交成功'); history.back();</script>");
 		}
 		
 		out.println("  </BODY>");

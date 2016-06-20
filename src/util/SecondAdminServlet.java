@@ -72,7 +72,7 @@ public class SecondAdminServlet extends HttpServlet {
 					}
 				}
 			}
-			request.getRequestDispatcher("/secondAdmin.jsp").forward(request, response);
+			out.println("<script>alert('提交成功'); history.back();</script>");
 		}
 		if(submit2 != null){
 			//设置全部的学生的type=1， 代表通过审核
@@ -80,7 +80,7 @@ public class SecondAdminServlet extends HttpServlet {
 			for(int i = 0; i < list.size(); i++){
 				Teacher tea = list.get(i);
 				tea.setType(1);
-				tc.doModify(tea);
+				tc.doModify(tea);;
 			}
 			request.getRequestDispatcher("/secondAdmin.jsp").forward(request, response);
 		}
@@ -92,7 +92,7 @@ public class SecondAdminServlet extends HttpServlet {
 				tea.setType(3);
 				tc.doModify(tea);
 			}
-			request.getRequestDispatcher("/secondAdmin.jsp").forward(request, response);
+			out.println("<script>alert('提交成功'); history.back();</script>");
 		}
 		
 		out.println("  </BODY>");

@@ -77,7 +77,10 @@ public class Login extends HttpServlet {
 			}else{
 				if(admin.getPassword().equals(passwd)){
 					//验证成功，跳转到主页
-					request.getRequestDispatcher("/firstAdmin.jsp").forward(request, response);
+					//out.println("<script>alert('成功登陆！'); href='firstAdmin.jsp';</script>");
+					response.sendRedirect("http://localhost:8081/1300310118/index.jsp?success=yes");
+					Who.setAdmin(id);
+					//request.getRequestDispatcher("/firstAdmin.jsp?AID="+id).forward(request, response);
 					/*List<Student> list = null;
 					StuCRUD sc = new StuCRUD();
 					list = sc.doSelectByType(0);
@@ -93,12 +96,16 @@ public class Login extends HttpServlet {
 			if(stu == null){
 				//没有这个学生
 				//response.sendRedirect("http://localhost:8081/1300310118/index.jsp?error1=yes");
+				out.println("<script>alert('没有这个用户！'); history.back();</script>");
 			}else{
 				if(!stu.getPassword().equals(passwd)){
 					//说明密码错误
-					response.sendRedirect("http://localhost:8081/1300310118/index.jsp?error2=yes");
+					//response.sendRedirect("http://localhost:8081/1300310118/index.jsp?error2=yes");
+					out.println("<script>alert('密码不正确！'); history.back();</script>");
 				}else if(stu.getPassword().equals(passwd) && stu.getType()==1){
 					//说明验证密码成功，并且是已经经过管理员审核
+					response.sendRedirect("http://localhost:8081/1300310118/index.jsp?success2=yes");
+					Who.setStudent(id);
 					
 				}else{
 					//说明是密码正确，但是没有经过管理审核
@@ -117,6 +124,8 @@ public class Login extends HttpServlet {
 					response.sendRedirect("http://localhost:8081/1300310118/index.jsp?error2=yes");
 				}else if(tea.getPassword().equals(passwd) && tea.getType() == 1){
 					//说明验证密码成功，并且这个账号已经被管理员审核通过
+					Who.setTeacher(id);
+					response.sendRedirect("http://localhost:8081/1300310118/index.jsp?success3=yes");
 					
 				}else{
 					//说明密码成功，但是没用经过管理员审核

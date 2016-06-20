@@ -1,0 +1,62 @@
+	<table border="1" spacing="2">
+			
+			<%
+			//一页放5个
+				int pageCount;
+				int pageSize = 5;
+				int size;
+				int curPage = 1;
+				
+				String s_pageNow = request.getParameter("curPage");
+				if (s_pageNow != null) {
+					//接收到了pageNow
+					curPage = Integer.parseInt(s_pageNow);
+				}
+						
+				StuCRUD sc = new StuCRUD();
+				List<Student> list = sc.doSelectByType(0);
+				
+				size = list.size();
+				
+				if(size % pageSize == 0){
+					pageCount = size/pageSize;
+				}else{
+					pageCount = size/pageSize + 1;
+				}
+				
+				int z = pageSize*(curPage-1);
+				int k = pageSize*curPage;
+				for(int i = z; i < size;i++){
+					if(i < k){
+						String sid = list.get(i).getSid();
+						String passwd = list.get(i).getPassword();
+						%>
+						<tr>
+							<td><%=sid%></td>
+							<td><%=passwd %></td>
+						</tr>
+						<%
+					}
+				}
+			%> 
+			
+		</table>
+		
+				<%
+					//上一页
+					if (curPage != 1){
+						out.println("<a href=adminIndex.jsp?curPage="
+								+ (curPage - 1) + ">上一页</a>");
+					}
+					//显示超链接
+					for (int j = 1; j <= pageCount; j++) {
+						out.println("<a href=adminIndex.jsp?curPage=" + j + ">["
+								+ j + "]</a>");
+					}
+					//下一页
+					if (curPage != pageCount) {
+						out.println("<a href=adminIndex.jsp?curPage="
+								+ (curPage + 1) + ">下一页</a>");
+					}
+				%>
+					

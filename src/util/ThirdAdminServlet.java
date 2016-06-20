@@ -54,13 +54,15 @@ public class ThirdAdminServlet extends HttpServlet {
 			//System.out.println("QQQQQQQQQQQQQQQQQQQQQQQQQ"+values.length);
 			if(values == null ){
 				//跳出：至少选中一项
-				response.sendRedirect("http://localhost:8081/1300310118/thirdAdmin.jsp?error1=yes");
+				out.println("<script>alert('至少选中一项'); history.back();</script>");
+				//response.sendRedirect("http://localhost:8081/1300310118/thirdAdmin.jsp?error1=yes");
 			}else{
 				//在这里进行删除
 				for(int i = 0; i < values.length; i++){
 					sc.doDelete(values[i]);
 				}
-				request.getRequestDispatcher("/thirdAdmin.jsp").forward(request, response);
+				out.println("<script>alert('提交成功'); history.back();</script>");
+				//request.getRequestDispatcher("/thirdAdmin.jsp").forward(request, response);
 			}
 		}
 		if(deleteAll != null){
@@ -69,7 +71,7 @@ public class ThirdAdminServlet extends HttpServlet {
 			for(int i = 0; i < list.size(); i++){
 				sc.doDelete(list.get(i).getSid());
 			}
-			request.getRequestDispatcher("/thirdAdmin.jsp").forward(request, response);
+			out.println("<script>alert('提交成功'); history.back();</script>");
 		}
 		
 		out.println("  </BODY>");

@@ -59,6 +59,8 @@ public class Register extends HttpServlet {
 		name = new String(name.getBytes("ISO-8859-1"), "utf-8");
 		
 		System.out.println("++++++++++++++++++++++++++++++++  "+id+"  " +name+"  "+passwd);
+		id = id.trim();
+		passwd = passwd.trim();
 		
 		if(id.equals("") || passwd.equals("")){
 			//提示id和密码都不能为空

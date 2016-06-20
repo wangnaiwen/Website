@@ -5,7 +5,7 @@
   <head>
     <base href="<%=basePath%>">
     
-    <title>My JSP 'header.jsp' starting page</title>
+    <title>My JSP 'changePasswd.jsp' starting page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -30,37 +30,21 @@
  		}
 </style>
   </head>
+  
   <body>
-  <div align="center">
+<div align="center">
 	<div class="row-fluid">
 		<div class="span12">
 			<div class="navbar">
 				<div class="navbar-inner">
 					<div class="container-fluid">
-						<div class="nav-collapse collapse navbar-responsive-collapse" align="center">
-							<ul class="nav" >
-								<li>
-									<a href="http://desktop-kg8cd68:8081/1300310118/firstAdmin.jsp">学生注册审核</a>
-								</li>
-								<li>
-									<a href="http://desktop-kg8cd68:8081/1300310118/secondAdmin.jsp">老师注册审核</a>
-								</li>
-								<li>
-									<a href="http://desktop-kg8cd68:8081/1300310118/thirdAdmin.jsp">管理学生账号</a>
-								</li>
-								<li>
-									<a href="http://desktop-kg8cd68:8081/1300310118/fourAdmin.jsp">管理教师账号</a>
-								</li>
-								<li>
-									<a href="http://desktop-kg8cd68:8081/1300310118/fiveAdmin.jsp">团队账号注册</a>
-								</li>
-								<li>
-									<a href="http://desktop-kg8cd68:8081/1300310118/sixAdmin.jsp">个人账号注册</a>
-								</li>
-								<li>
-									<a href="http://desktop-kg8cd68:8081/1300310118/index.jsp">退出登录</a>
-								</li>
-							</ul>
+						<div class="nav-collapse collapse navbar-responsive-collapse" align="center"><br>
+							
+							* 初始密码：<input type="password" name="oldPassword"><br>
+							* 新的密码：<input type="password" name="newPassword"><br>
+							* 确认密码：<input type="password" name="checkPassword"><br>
+							<input type="submit" value="提交">
+							<input type="reset" value="重置">
 						</div>
 					</div>
 				</div>
@@ -68,5 +52,6 @@
 		</div>
 	</div>
 </div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
   </body>
 </html>

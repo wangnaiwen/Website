@@ -17,10 +17,11 @@ public class StuCRUD {
 
 	static Configuration config;
 	static SessionFactory sessionFactory;
-	static Session session;
-	static Transaction transaction;
+	
 
 	public boolean doInsert(Student stu) {
+		Session session = null;
+		Transaction transaction = null;
 		try {
 			session = HibernateSessionFactory.getSession();
 			transaction = session.beginTransaction();
@@ -34,15 +35,16 @@ public class StuCRUD {
 			return false;
 			// System.out.println("Fail!");
 		} finally {
-			/*if(session.isOpen()){
+			if(session.isOpen()){
 				session.close();
-			}*/
+			}
 		}
 	}
 
 	public boolean doDelete(String id) {
 		Student newdata = null;
-
+		Session session = null;
+		Transaction transaction = null;
 		try {
 			session = HibernateSessionFactory.getSession();
 			transaction = session.beginTransaction();
@@ -58,13 +60,15 @@ public class StuCRUD {
 			return false;
 			// System.out.println("Fail!");
 		} finally {
-			/*if(session.isOpen()){
+			if(session.isOpen()){
 				session.close();
-			}*/
+			}
 		}
 	}
 
 	public Student doSelect(String i) {
+		Session session = null;
+		Transaction transaction = null;
 		Student data = null;
 		try {
 			session = HibernateSessionFactory.getSession();
@@ -76,25 +80,21 @@ public class StuCRUD {
 			transaction.rollback();
 			e.printStackTrace();
 		} finally {
-			/*if(session.isOpen()){
+			if(session.isOpen()){
 				session.close();
-			}*/
+			}
 		}
 		return data;
 	}
 
 	public boolean doModify(Student stu) {
+		Session session = null;
+		Transaction transaction = null;
 		try {
 			session = HibernateSessionFactory.getSession();
 			transaction = session.beginTransaction();
-			
-			Student s = null;
-			s = doSelect(stu.getSid());
-			if(s != null){
-				doDelete(stu.getSid());
-				doInsert(stu);
-			}
-			//transaction.commit();
+			session.update(stu);
+			transaction.commit();
 			return true;
 //			System.out.println("OK!");
 		} catch (Exception e) {
@@ -103,13 +103,15 @@ public class StuCRUD {
 			return false;
 //			System.out.println("Fail!");
 		} finally {
-			/*if(session.isOpen()){
+			if(session.isOpen()){
 				session.close();
-			}*/
+			}
 		}
 	}
 	
 	public List<Student> doSelectByType(int type){
+		Session session = null;
+		Transaction transaction = null;
 		List<Student> data = null;
 		try {
 			session = HibernateSessionFactory.getSession();
@@ -124,15 +126,17 @@ public class StuCRUD {
 			transaction.rollback();
 			e.printStackTrace();
 		} finally {
-			/*if(session.isOpen()){
+			if(session.isOpen()){
 				session.close();
-			}*/
+			}
 		}
 		return data;
 	}
 	
 
 	public List<Student> doSelectAll(){
+		Session session = null;
+		Transaction transaction = null;
 		List<Student> list = null;
 		try {
 			session = HibernateSessionFactory.getSession();
@@ -146,9 +150,9 @@ public class StuCRUD {
 			transaction.rollback();
 			e.printStackTrace();
 		} finally {
-			/*if(session.isOpen()){
+			if(session.isOpen()){
 				session.close();
-			}*/
+			}
 		}
 		return list;
 	}

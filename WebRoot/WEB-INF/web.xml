@@ -70,6 +70,140 @@
     <servlet-name>FourAdminServlet</servlet-name>
     <servlet-class>util.FourAdminServlet</servlet-class>
   </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SevenAdminServlet</servlet-name>
+    <servlet-class>util.SevenAdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EightAdminServlet</servlet-name>
+    <servlet-class>util.EightAdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModifyCourseInfo</servlet-name>
+    <servlet-class>util.ModifyCourseInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TenAdminServlet</servlet-name>
+    <servlet-class>util.TenAdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StudentPerfectInfo</servlet-name>
+    <servlet-class>util.StudentPerfectInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StudentChangePasswd</servlet-name>
+    <servlet-class>util.StudentChangePasswd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TeacherChangePasswd</servlet-name>
+    <servlet-class>util.TeacherChangePasswd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TeacherPerfectInfo</servlet-name>
+    <servlet-class>util.TeacherPerfectInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddStudentToCourse</servlet-name>
+    <servlet-class>util.AddStudentToCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AllStudentOfCourse</servlet-name>
+    <servlet-class>util.AllStudentOfCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StudentExitCourse</servlet-name>
+    <servlet-class>util.StudentExitCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StudentChooseCourse</servlet-name>
+    <servlet-class>util.StudentChooseCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PublishJobIndex</servlet-name>
+    <servlet-class>util.PublishJobIndex</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Submit</servlet-name>
+    <servlet-class>util.Submit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SmartDownloadServlet</servlet-name>
+    <servlet-class>util.SmartDownloadServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>JobDetailInfo</servlet-name>
+    <servlet-class>util.JobDetailInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BatchInsertStuToCou</servlet-name>
+    <servlet-class>util.BatchInsertStuToCou</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertScoreForJob</servlet-name>
+    <servlet-class>util.InsertScoreForJob</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertScoreForCourse</servlet-name>
+    <servlet-class>util.InsertScoreForCourse</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DetailOfQuestion</servlet-name>
+    <servlet-class>util.DetailOfQuestion</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TeaDetailOfQuestion</servlet-name>
+    <servlet-class>util.TeaDetailOfQuestion</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StuAskQuestion</servlet-name>
+    <servlet-class>util.StuAskQuestion</servlet-class>
+  </servlet>
+
+
 
 
 
@@ -124,6 +258,94 @@
   <servlet-mapping>
     <servlet-name>FourAdminServlet</servlet-name>
     <url-pattern>/servlet/FourAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SevenAdminServlet</servlet-name>
+    <url-pattern>/servlet/SevenAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EightAdminServlet</servlet-name>
+    <url-pattern>/servlet/EightAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyCourseInfo</servlet-name>
+    <url-pattern>/servlet/ModifyCourseInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TenAdminServlet</servlet-name>
+    <url-pattern>/servlet/TenAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StudentPerfectInfo</servlet-name>
+    <url-pattern>/servlet/StudentPerfectInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StudentChangePasswd</servlet-name>
+    <url-pattern>/servlet/StudentChangePasswd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeacherChangePasswd</servlet-name>
+    <url-pattern>/servlet/TeacherChangePasswd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeacherPerfectInfo</servlet-name>
+    <url-pattern>/servlet/TeacherPerfectInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddStudentToCourse</servlet-name>
+    <url-pattern>/servlet/AddStudentToCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AllStudentOfCourse</servlet-name>
+    <url-pattern>/servlet/AllStudentOfCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StudentExitCourse</servlet-name>
+    <url-pattern>/servlet/StudentExitCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StudentChooseCourse</servlet-name>
+    <url-pattern>/servlet/StudentChooseCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PublishJobIndex</servlet-name>
+    <url-pattern>/servlet/PublishJobIndex</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Submit</servlet-name>
+    <url-pattern>/servlet/Submit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SmartDownloadServlet</servlet-name>
+    <url-pattern>/servlet/SmartDownloadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JobDetailInfo</servlet-name>
+    <url-pattern>/servlet/JobDetailInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BatchInsertStuToCou</servlet-name>
+    <url-pattern>/servlet/BatchInsertStuToCou</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertScoreForJob</servlet-name>
+    <url-pattern>/servlet/InsertScoreForJob</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertScoreForCourse</servlet-name>
+    <url-pattern>/servlet/InsertScoreForCourse</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DetailOfQuestion</servlet-name>
+    <url-pattern>/servlet/DetailOfQuestion</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TeaDetailOfQuestion</servlet-name>
+    <url-pattern>/servlet/TeaDetailOfQuestion</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StuAskQuestion</servlet-name>
+    <url-pattern>/servlet/StuAskQuestion</url-pattern>
   </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>

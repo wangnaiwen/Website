@@ -32,7 +32,7 @@
             <column name="abstracts" />
         </property>
         <property name="sex" type="java.lang.String">
-            <column name="sex" length="2" />
+            <column name="sex" />
         </property>
         <property name="password" type="java.lang.String">
             <column name="password" not-null="true" />
@@ -40,5 +40,35 @@
         <property name="type" type="java.lang.Integer">
             <column name="type" not-null="true" />
         </property>
+        <set name="publishjobs" inverse="true">
+            <key>
+                <column name="tid" />
+            </key>
+            <one-to-many class="entity.Publishjob" />
+        </set>
+        <set name="questions" inverse="true">
+            <key>
+                <column name="tid" />
+            </key>
+            <one-to-many class="entity.Question" />
+        </set>
+        <set name="answers" inverse="true">
+            <key>
+                <column name="tid" />
+            </key>
+            <one-to-many class="entity.Answer" />
+        </set>
+        <set name="files" inverse="true">
+            <key>
+                <column name="tid" />
+            </key>
+            <one-to-many class="entity.File" />
+        </set>
+        <set name="courses" inverse="true">
+            <key>
+                <column name="tid" />
+            </key>
+            <one-to-many class="entity.Course" />
+        </set>
     </class>
 </hibernate-mapping>

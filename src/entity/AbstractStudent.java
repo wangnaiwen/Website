@@ -1,5 +1,8 @@
 package entity;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * AbstractStudent entity provides the base persistence definition of the
  * Student entity. @author MyEclipse Persistence Tools
@@ -20,6 +23,10 @@ public abstract class AbstractStudent implements java.io.Serializable {
 	private String wechat;
 	private String password;
 	private Integer type;
+	private Set questions = new HashSet(0);
+	private Set scs = new HashSet(0);
+	private Set answers = new HashSet(0);
+	private Set files = new HashSet(0);
 
 	// Constructors
 
@@ -38,7 +45,7 @@ public abstract class AbstractStudent implements java.io.Serializable {
 	public AbstractStudent(String sid, String name, String sex,
 			String birthday, String department, String major,
 			String phoneNumber, String qq, String wechat, String password,
-			Integer type) {
+			Integer type, Set questions, Set scs, Set answers, Set files) {
 		this.sid = sid;
 		this.name = name;
 		this.sex = sex;
@@ -50,6 +57,10 @@ public abstract class AbstractStudent implements java.io.Serializable {
 		this.wechat = wechat;
 		this.password = password;
 		this.type = type;
+		this.questions = questions;
+		this.scs = scs;
+		this.answers = answers;
+		this.files = files;
 	}
 
 	// Property accessors
@@ -140,6 +151,38 @@ public abstract class AbstractStudent implements java.io.Serializable {
 
 	public void setType(Integer type) {
 		this.type = type;
+	}
+
+	public Set getQuestions() {
+		return this.questions;
+	}
+
+	public void setQuestions(Set questions) {
+		this.questions = questions;
+	}
+
+	public Set getScs() {
+		return this.scs;
+	}
+
+	public void setScs(Set scs) {
+		this.scs = scs;
+	}
+
+	public Set getAnswers() {
+		return this.answers;
+	}
+
+	public void setAnswers(Set answers) {
+		this.answers = answers;
+	}
+
+	public Set getFiles() {
+		return this.files;
+	}
+
+	public void setFiles(Set files) {
+		this.files = files;
 	}
 
 }

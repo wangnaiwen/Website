@@ -71,7 +71,7 @@ public class FirstAdminServlet extends HttpServlet {
 					}
 				}
 			}
-			request.getRequestDispatcher("/firstAdmin.jsp").forward(request, response);
+			out.println("<script>alert('提交成功'); history.back();</script>");
 		}
 		if(submit2 != null){
 			//设置全部的学生的type=1， 代表通过审核
@@ -91,7 +91,7 @@ public class FirstAdminServlet extends HttpServlet {
 				stu.setType(3);
 				sc.doModify(stu);
 			}
-			request.getRequestDispatcher("/firstAdmin.jsp").forward(request, response);
+			out.println("<script>alert('提交成功'); history.back();</script>");
 		}
 		
 		out.println("  </BODY>");

@@ -140,20 +140,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    								<%
    								if (s==0){
    								%>
-   									性 别：<input type="radio" name="sex" value="1">男
-   									 <input type="radio" name="sex" value="0"  checked="checked">女<br><br>
+   									性 别：<input type="radio" name="sex" value="1"   checked="checked">男
+   									 <input type="radio" name="sex" value="0">女<br><br>
    								<%
    								}
    								else if(s == 2){
    									%>
-   										性 别：<input type="radio" name="sex" value="1">男
+   										性 别：<input type="radio" name="sex" value="1" checked="checked">男
    										 <input type="radio" name="sex" value="0">女<br><br>
    									<%
    								}
    								else{
    								%>
-   								性 别：<input type="radio" name="sex" value="1"  checked="checked">男
-   									 <input type="radio" name="sex" value="0">女<br><br>
+   								性 别：<input type="radio" name="sex" value="1" >男
+   									 <input type="radio" name="sex" value="0"  checked="checked">女<br><br>
    								<%
    								}
    								
